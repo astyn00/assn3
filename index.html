@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="style.css">
+    <title>Bride Price Calculator</title>
+  </head>
+  <body>
+    <div class="container mt-4 shadow p-3 mb-5 bg-white rounded">
+        <div class="row">
+            <div class="col col-sm-12">
+                <h1 class="text-center">Bride Price Calculator</h1>
+                <form>
+                    <label for="education_level">Education level:</label><br>
+                    <select id="education">
+                        <option value="blank"></option>
+                        <option value="bachelor">Bachelor's degree</option>
+                        <option value="college">College degree</option>
+                        <option value="high_school">High school degree</option>
+                        <option value="middle_school">Middle school degree</option>
+                    </select>
+                    <hr>
+                    <label for="family_networth">Family networth</label><br>
+                    <select id="networth">
+                        <option value="blank"></option>
+                        <option value="upper_class">More than 10,000$</option>
+                        <option value="middle_class">Between 5,000$ and 10,000$</option>
+                        <option value="lower_class">Less than 5,000$</option>
+                    </select>
+                    <hr>
+                    <label for="caste">Caste:</label><br>
+                    <select id="caste">
+                        <option value="blank"></option>
+                        <option value="brahmin">Brahmin</option>
+                        <option value="kshatriya">Kshatriya</option>
+                        <option value="vaishya">Vaishya</option>
+                        <option value="shudra">Shudra</option>
+                        <option value="varna">Varna - untouchable</option>
+                    </select>
+                    <hr>
+                    <label for="skills">Skills:</label><br>
+                    <input type="checkbox" id="musical_instrument" value="musical_instrument">
+                    <label for="musical_instrument">Plays musical instrument</label><br>
+                    <input type="checkbox" id="cook" value="cook">
+                    <label for="cook">Good cook</label><br>
+                    <input type="checkbox" id="easygoing" value="easygoing">
+                    <label for="easygoing">Easygoing character</label><br>
+                    <input type="checkbox" id="sings" value="sings">
+                    <label for="sings">Sings well</label><br>
+                    <hr>
+                    <label for="age">Age:</label><br>
+                    <input type="radio" id="age1823" name="age" value="1823">
+                    <label for="age1823">Between 18-23</label><br>
+                    <input type="radio" id="age2427" name="age" value="2427">
+                    <label for="age2427">Between 24-27</label><br>
+                    <input type="radio" id="age28plus" name="age" value="28plus">
+                    <label for="age28plus">28+</label><br>
+                    <hr>
+                    <label for="reputation">Reputation:</label><br>
+                    <input type="checkbox" id="parents_attitude" value="parents_attitude">
+                    <label for="parents_attitude">Gossips about her parents' attitude</label><br>
+                    <input type="checkbox" id="character" value="character">
+                    <label for="character">Gossips about her character</label><br>
+                    <input type="checkbox" id="general" value="general">
+                    <label for="general">General gossips around her person</label><br>
+                    <hr>
+                </form>
+                <button id="submit" type="button" class="btn btn-primary">Calculate Price</button>
+                <div id="result" class="mt-3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  </body>
+</html>
